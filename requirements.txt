@@ -1,0 +1,7 @@
+ee
+numpy
+tensorflow
+folium
+eefolium
+matplotlib.pyplot
+tensorflow.keras
