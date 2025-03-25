@@ -76,7 +76,10 @@ An end-to-end machine learning pipeline for detecting wildfires in satellite ima
 
 ## 📊 Results
 
-Model	Metric	Score
-Classification	Accuracy	53%
-Segmentation	IoU	71%
-Forecasting	MAE (Fire Count)	0.72
+| Model         | Metric       | Score |
+|--------------|-------------|-------|
+| Classification | Accuracy    | 53%   |
+| Segmentation  | IoU         | 71%   |
+| Forecasting   | MAE (Fire Count) | 0.72  |
+
+## 🤖 Model Architectures
