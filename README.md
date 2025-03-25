@@ -1,9 +1,6 @@
 # 🔥Wildfire Detection and Forecasting System
 An end-to-end machine learning pipeline for detecting wildfires in satellite imagery, mapping fire boundaries, and predicting future fire risks. Built to support emergency response teams with real-time insights.
 ![image](wf.png)
-
-
-![Project Pipeline](https://i.imgur.com/xyZ1qD2.png)  
 *Classification → Segmentation → Forecasting*
 
 ---
@@ -42,5 +39,5 @@ An end-to-end machine learning pipeline for detecting wildfires in satellite ima
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/wildfire-detection.git
+   git clone https://github.com/bakasheddy/wildfire-detection.git
    cd wildfire-detection
