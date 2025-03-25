@@ -41,3 +41,42 @@ An end-to-end machine learning pipeline for detecting wildfires in satellite ima
    ```bash
    git clone https://github.com/bakasheddy/wildfire-detection.git
    cd wildfire-detection
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   Requirements: TensorFlow, OpenCV, Prophet, Pandas, Matplotlib.
+3. Download datasets:
+   - [NASA FIRMS](https://drive.google.com/drive/folders/1DNLu_gbhDI_IttUaIxU-0eGGxkgC95JU?usp=drive_link "satellite imagery")
+   - [CAL FIRE](https://github.com/bakasheddy/California-satellite-imaging-wildfire-detection/blob/main/California_Fire_Perimeters_(1950%252B).csv "historical fire data")
+
+## 🛠️ Usage
+
+1. Classification
+   ```python
+   # Train the CNN model
+   python train_classifier.py --data_dir=./FIRMS_Data --epochs=50
+
+   # Predict on new images
+   python infer_classification.py --image=satellite_image.png
+   ```
+2. Segmentation
+   ```python
+   # Generate fire masks
+   python infer_segmentation.py --image=satellite_image.png
+
+   # Train U-Net (requires GPU)
+   python train_segmenter.py --data_dir=./FIRMS_Data --batch_size=8
+   ```
+3. Forecasting
+   ```python
+   # Generate fire risk predictions
+   python run_forecast.py --data=cal_fire_data.csv --horizon=365
+   ```
+
+## 📊 Results
+
+Model	Metric	Score
+Classification	Accuracy	53%
+Segmentation	IoU	71%
+Forecasting	MAE (Fire Count)	0.72
