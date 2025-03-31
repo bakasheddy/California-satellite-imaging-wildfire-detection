@@ -97,4 +97,4 @@ An end-to-end machine learning pipeline for detecting wildfires in satellite ima
 ### Forecasting (Prophet)
 - Trend: Piecewise linear
 - Seasonality: Yearly + custom fire seasonality
-
+## 📂 Datasets
