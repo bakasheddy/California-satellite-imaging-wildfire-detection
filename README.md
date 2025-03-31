@@ -84,17 +84,17 @@ An end-to-end machine learning pipeline for detecting wildfires in satellite ima
 
 ## 🤖 Model Architectures
 
-### Classification (CNN)
+#### Classification (CNN)
 - Backbone: MobileNetV2 (pretrained on ImageNet)
 - Augmentation: Random flips, rotation, contrast
 - Loss: Focal Loss (γ=2, α=0.25)
 
-### Segmentation (U-Net)
+#### Segmentation (U-Net)
 - Encoder: 4 downsampling blocks
 - Decoder: 4 upsampling blocks with skip connections
 - Loss: Dice Loss
 
-### Forecasting (Prophet)
+#### Forecasting (Prophet)
 - Trend: Piecewise linear
 - Seasonality: Yearly + custom fire seasonality
 ## 📂 Datasets
