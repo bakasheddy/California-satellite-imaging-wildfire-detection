@@ -83,3 +83,18 @@ An end-to-end machine learning pipeline for detecting wildfires in satellite ima
 | Forecasting   | MAE (Fire Count) | 0.72  |
 
 ## 🤖 Model Architectures
+
+### Classification (CNN)
+- Backbone: MobileNetV2 (pretrained on ImageNet)
+- Augmentation: Random flips, rotation, contrast
+- Loss: Focal Loss (γ=2, α=0.25)
+
+### Segmentation (U-Net)
+- Encoder: 4 downsampling blocks
+- Decoder: 4 upsampling blocks with skip connections
+- Loss: Dice Loss
+
+### Forecasting (Prophet)
+- Trend: Piecewise linear
+- Seasonality: Yearly + custom fire seasonality
+
