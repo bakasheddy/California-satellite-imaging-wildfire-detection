@@ -98,3 +98,5 @@ An end-to-end machine learning pipeline for detecting wildfires in satellite ima
 - Trend: Piecewise linear
 - Seasonality: Yearly + custom fire seasonality
 ## 📂 Datasets
+- FIRMS: Daily satellite hotspot data (PNG/JPG).
+- CAL FIRE: Historical wildfire perimeters (CSV with ALARM_DATE, GIS_ACRES).
